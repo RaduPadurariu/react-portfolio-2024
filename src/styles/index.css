@@ -258,6 +258,7 @@ a h6:hover {
   -o-transition: 0.3s;
   transition: 0.3s;
   letter-spacing: 1px;
+  white-space: nowrap;
 }
 .tj-btn-secondary:hover {
   background: var(--tj-theme-primary);
@@ -853,6 +854,7 @@ header img {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding: 1rem 0;
 }
 
 .hero-content-box .lead {
@@ -883,6 +885,8 @@ header img {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  max-width: 28rem;
+  margin-left: 2rem;
 }
 
 .hero-image-box img:hover {
@@ -1680,7 +1684,21 @@ header img {
 }
 
 /* Responsive */
-@media screen and (max-width: 1000px) {
+
+@media screen and (max-width: 1200px) {
+  .hero-image-box img {
+    max-width: 20rem;
+  }
+
+  .hero-content-box h1 {
+    font-size: 3rem;
+  }
+  .hero-content-box p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
   /* CSS for menu animation */
   .header-menu {
     display: none;
@@ -1755,6 +1773,12 @@ header img {
   }
   .w-half {
     width: 100%;
+  }
+
+  .hero-image-box img {
+    margin-bottom: 3rem;
+    max-width: 90%;
+    margin-left: 0;
   }
 }
 
@@ -1848,6 +1872,7 @@ footer img {
 .copy-text p > a:hover {
   color: var(--tj-theme-primary);
 }
+
 /* -------------  END: Footer Area  --------------*/
 
 /* -------------  Start: Portfoli Details Area  --------------*/
@@ -2054,3 +2079,9 @@ footer img {
   text-align: end;
 }
 /* -------------  End: Portfoli Details Area  --------------*/
+
+@media screen and (max-width: 576px) {
+  .hero-content-box .button-box {
+    flex-wrap: wrap;
+  }
+}

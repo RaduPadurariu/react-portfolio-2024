@@ -10,23 +10,23 @@ export const linkList = [
 export const hero = [
   {
     id: 1,
-    title: "Years of Experience",
-    text: "15",
+    title: "Years of Frontend Education",
+    text: "2+",
   },
   {
     id: 2,
-    title: "Project Completed",
-    text: "50+",
+    title: "Years of React Practice",
+    text: "1+",
   },
   {
     id: 3,
-    title: "Happy Clients",
-    text: "1.5K",
+    title: "React Responsive Templates",
+    text: "10+",
   },
   {
     id: 4,
-    title: "Years of Experience",
-    text: "14",
+    title: "Years of IT Experience",
+    text: "3+",
   },
 ];
 export const service = [
