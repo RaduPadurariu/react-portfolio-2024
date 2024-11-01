@@ -193,6 +193,7 @@ a h6:hover {
 }
 .tj-btn-primary {
   text-decoration: none;
+  cursor: pointer;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1722,6 +1723,15 @@ header img {
   .grid6 {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .contact-section .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-section .contact-form-box {
+    margin-bottom: 5rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -1802,8 +1812,7 @@ header img {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .resume-section .flexSB,
-  .contact-section .container {
+  .resume-section .flexSB {
     display: flex;
     flex-direction: column;
   }
@@ -2121,6 +2130,20 @@ footer img {
 
   .resume-section .section-title {
     font-size: 2rem;
+  }
+
+  .contact-section .container {
+    width: 100%;
+  }
+
+  .contact-info-list li {
+    padding-left: 25px;
+  }
+
+  .contact-info-list .text-box p {
+    word-break: break-all;
+    overflow-wrap: break-word;
+    white-space: normal;
   }
 
   /* .grid4-hero {
