@@ -150,6 +150,12 @@ a h6:hover {
   align-items: center;
   gap: 50px;
 }
+
+.flexSB-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 .grid6 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -160,7 +166,8 @@ a h6:hover {
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 30px;
 }
-.grid4 {
+.grid4,
+.grid4-hero {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
@@ -1688,7 +1695,7 @@ header img {
 @media screen and (max-width: 2000px) {
   .grid4 {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 40px;
   }
 }
 
@@ -1702,6 +1709,15 @@ header img {
   }
   .hero-content-box p {
     font-size: 1rem;
+  }
+
+  .w-half {
+    width: 100%;
+  }
+
+  .resume-section .flexSB-start {
+    flex-direction: column;
+    gap: 100px;
   }
 }
 
@@ -1743,9 +1759,24 @@ header img {
     background-color: rgba(0, 0, 0, 0.8);
   }
 
+  .hero-section .flexSB {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .hero-image-box img {
+    margin-bottom: 3rem;
+    max-width: 90%;
+    margin-left: 0;
+  }
+
+  .grid4-hero {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+  }
   .grid4 {
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
+    grid-gap: 60px;
   }
 
   @keyframes slideIn {
@@ -1771,10 +1802,6 @@ header img {
     grid-gap: 20px;
   }
 
-  .hero-section .flexSB {
-    display: flex;
-    flex-direction: column-reverse;
-  }
   .resume-section .flexSB,
   .contact-section .container {
     display: flex;
@@ -1782,15 +1809,6 @@ header img {
   }
   .resume-section .resume-item {
     margin-right: 0;
-  }
-  .w-half {
-    width: 100%;
-  }
-
-  .hero-image-box img {
-    margin-bottom: 3rem;
-    max-width: 90%;
-    margin-left: 0;
   }
 }
 
@@ -2096,4 +2114,12 @@ footer img {
   .hero-content-box .button-box {
     flex-wrap: wrap;
   }
+
+  .resume-section .section-title {
+    font-size: 2rem;
+  }
+
+  /* .grid4-hero {
+    grid-template-columns: repeat(1, 1fr);
+  } */
 }
