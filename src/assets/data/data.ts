@@ -1,10 +1,11 @@
 export const linkList = [
   { id: 0, text: "Home", link: "/" },
-  { id: 1, text: "Projects", link: "/projects" },
+
   // { id: 2, text: "Works", link: "/work" },
   { id: 3, text: "Resume", link: "/resume" },
   { id: 4, text: "Skills", link: "/skill" },
   // { id: 5, text: "Testimonials", link: "/testimonials" },
+  { id: 1, text: "Projects", link: "/projects" },
   { id: 6, text: "Contact", link: "/contact" },
 ];
 export const hero = [
@@ -27,28 +28,6 @@ export const hero = [
     id: 4,
     title: "Years of IT Experience",
     text: "3+",
-  },
-];
-export const service = [
-  {
-    id: 1,
-    title: "Branding Design",
-    text: "I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people",
-  },
-  {
-    id: 2,
-    title: "Web Design",
-    text: "I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people",
-  },
-  {
-    id: 3,
-    title: "UI/UX Design",
-    text: "I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people",
-  },
-  {
-    id: 4,
-    title: "Graphics Design",
-    text: "I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people",
   },
 ];
 
@@ -168,53 +147,6 @@ export const skillsData = [
   { id: 5, name: "Git", percentage: 65, icon: "../images/skills/s5.svg" },
   { id: 6, name: "SASS", percentage: 25, icon: "../images/skills/s6.svg" },
 ];
-export const testimonialData = [
-  {
-    id: 1,
-    logo: "./images/testimonials/1.png",
-    userImage: "../images/testimonials/testimonial-1.png",
-    quote:
-      "“Taylor is a professional Designer he really helps my business by providing value to my business.",
-    name: "Brandon Fraser",
-    designation: "Senior Software Dev, Cosmic Sport",
-  },
-  {
-    id: 2,
-    logo: "./images/testimonials/2.png",
-    userImage: "../images/testimonials/testimonial-2.png",
-    quote:
-      "“Taylor is a professional Designer he really helps my business by providing value to my business.",
-    name: "Tim Bailey",
-    designation: "SEO Specialist, Theme Junction",
-  },
-  {
-    id: 3,
-    logo: "./images/testimonials/1.png",
-    userImage: "../images/testimonials/1.jpg",
-    quote:
-      "“Taylor is a professional Designer he really helps my business by providing value to my business.",
-    name: "Emily Watson",
-    designation: "Product Manager, Digital World",
-  },
-  {
-    id: 4,
-    logo: "./images/testimonials/2.png",
-    userImage: "../images/testimonials/2.jpg",
-    quote:
-      "“Taylor is a professional Designer he really helps my business by providing value to my business.",
-    name: "John Doe",
-    designation: "Marketing Executive, Tech Solutions",
-  },
-  {
-    id: 5,
-    logo: "./images/testimonials/1.png",
-    userImage: "../images/testimonials/1.jpg",
-    quote:
-      "“Taylor is a professional Designer he really helps my business by providing value to my business.",
-    name: "Sarah Johnson",
-    designation: "UX/UI Designer, Creative Minds",
-  },
-];
 
 export const blogs = [
   {
@@ -293,27 +225,8 @@ export const blogs = [
   // },
 ];
 
-export const projectsDetails = [
-  {
-    id: 1,
-    title: "DStudio",
-    category: "Web Design",
-    client: "Artboard Studio",
-    startDate: "August 20, 2023",
-    designer: "ThemeJunction",
-    description:
-      "They are was greater open above shelter lets itself under appear sixth open gathering made upon can't own above midst gathering gathered he one us saying can't divide.",
-    description2:
-      "They are was greater open above shelter lets itself under appear sixth open gathering made upon can't own above midst gathering gathered he one us saying can't divide. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
-    story:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
-    approach:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
-    images: [
-      "../images/portfolio/p-gallery-1.jpg",
-      "../images/portfolio/p-gallery-2.jpg",
-      "../images/portfolio/p-gallery-3.jpg",
-      "../images/portfolio/p-gallery-4.jpg",
-    ],
-  },
+export const contactInfo = [
+  { id: 1, phone: "+40751227911" },
+  { id: 2, email: "padurariuionutradu@gmail.com" },
+  { id: 3, address: "Full remote from Falticeni, Suceava, Romania" },
 ];
