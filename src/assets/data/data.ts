@@ -94,55 +94,55 @@ export const projects = [
 export const experienceData = [
   {
     id: 1,
-    time: "2022 - Present",
-    title: "Lead Developer",
-    institute: "Blockdots, London",
+    time: "2024 - Present",
+    title: "React Developer",
+    institute: "Personal Projects, Remote",
   },
   {
     id: 2,
-    time: "2021 - 2022",
-    title: "Full Stack Web Developer",
-    institute: "Parsons, The New School",
+    time: "2022 - 2024",
+    title: "Blockchain game developing support",
+    institute: "Free Lancer - NFT Blockchain Industry, Remote",
   },
   {
     id: 3,
-    time: "2020 - 2021",
-    title: "UI Designer",
-    institute: "House of Life, Leeds",
+    time: "2008 - 2022",
+    title: "Data Engineer in Oil Industry",
+    institute: "Geolog International, Romania",
   },
-  {
-    id: 4,
-    time: "2018 - 2020",
-    title: "Junior Graphics Designer",
-    institute: "Theme Junction, Bursa",
-  },
+  // {
+  //   id: 4,
+  //   time: "2018 - 2020",
+  //   title: "Junior Graphics Designer",
+  //   institute: "Theme Junction, Bursa",
+  // },
 ];
 
 export const educationData = [
   {
     id: 1,
-    time: "2020 - 2023",
-    title: "Programming course",
-    institute: "Harverd University",
+    time: "2024 - present",
+    title: "React Developer",
+    institute: "Webdevsimplified, Remote",
   },
   {
     id: 2,
-    time: "2016 - 2020",
-    title: "Graphic design course",
-    institute: "University of Denmark",
+    time: "2022-2023",
+    title: "Web Developer",
+    institute: "Scoala Informala de IT, Remote",
   },
   {
     id: 3,
-    time: "2012 - 2015",
-    title: "Web design course",
-    institute: "University of California",
+    time: "1998-2002",
+    title: "Programming School",
+    institute: "High School Nicu Gane, Falticeni",
   },
-  {
-    id: 4,
-    time: "2010 - 2011",
-    title: "Design & Technology",
-    institute: "Parsons, The New School",
-  },
+  // {
+  //   id: 4,
+  //   time: "2010 - 2011",
+  //   title: "Design & Technology",
+  //   institute: "Parsons, The New School",
+  // },
 ];
 
 export const skillsData = [
