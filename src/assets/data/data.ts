@@ -146,12 +146,27 @@ export const educationData = [
 ];
 
 export const skillsData = [
-  { id: 1, name: "Figma", percentage: 92, icon: "../images/skill/s1.svg" },
-  { id: 2, name: "Sketch", percentage: 80, icon: "../images/skill/s2.svg" },
-  { id: 3, name: "XD", percentage: 85, icon: "../images/skill/s3.svg" },
-  { id: 4, name: "WordPess", percentage: 99, icon: "../images/skill/s4.svg" },
-  { id: 5, name: "React", percentage: 89, icon: "../images/skill/s5.svg" },
-  { id: 6, name: "JavaScript", percentage: 93, icon: "../images/skill/s6.svg" },
+  { id: 1, name: "React", percentage: 75, icon: "../images/skills/s1.svg" },
+  {
+    id: 2,
+    name: "Java Script",
+    percentage: 90,
+    icon: "../images/skills/s2.svg",
+  },
+  {
+    id: 3,
+    name: "Type Script",
+    percentage: 60,
+    icon: "../images/skills/s3.svg",
+  },
+  {
+    id: 4,
+    name: "Node JS & Express",
+    percentage: 50,
+    icon: "../images/skills/s4.svg",
+  },
+  { id: 5, name: "Git", percentage: 65, icon: "../images/skills/s5.svg" },
+  { id: 6, name: "SASS", percentage: 25, icon: "../images/skills/s6.svg" },
 ];
 export const testimonialData = [
   {
