@@ -1685,6 +1685,13 @@ header img {
 
 /* Responsive */
 
+@media screen and (max-width: 2000px) {
+  .grid4 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .hero-image-box img {
     max-width: 20rem;
@@ -1735,6 +1742,12 @@ header img {
     animation-duration: 0.3s;
     background-color: rgba(0, 0, 0, 0.8);
   }
+
+  .grid4 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+
   @keyframes slideIn {
     from {
       opacity: 0;
@@ -1753,9 +1766,8 @@ header img {
     grid-gap: 20px;
   }
   .grid5,
-  .grid3,
-  .grid4 {
-    grid-template-columns: repeat(2, 1fr);
+  .grid3 {
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
   }
 
