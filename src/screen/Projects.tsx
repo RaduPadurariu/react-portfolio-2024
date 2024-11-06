@@ -1,13 +1,15 @@
 import { CiCalendar } from "react-icons/ci";
-import { FaCode, FaReact, FaRegComments } from "react-icons/fa";
 import { blogs } from "../assets/data/data";
-import { HiTemplate } from "react-icons/hi";
 import { AiFillFolder } from "react-icons/ai";
+import { RefObject } from "react";
 
-export const Projects = () => {
+interface ProjectsProps {
+  projectsRef: RefObject<HTMLDivElement>;
+}
+export const Projects: React.FC<ProjectsProps> = ({ projectsRef }) => {
   return (
     <>
-      <section className="blog-section">
+      <section className="blog-section" ref={projectsRef}>
         <div className="container">
           <div className="section-header text">
             <h2 className="section-title">My Recent Work</h2>

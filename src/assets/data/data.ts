@@ -2,11 +2,11 @@ export const linkList = [
   { id: 0, text: "Home", link: "/" },
 
   // { id: 2, text: "Works", link: "/work" },
-  { id: 3, text: "Resume", link: "/resume" },
-  { id: 4, text: "Skills", link: "/skill" },
+  { id: 3, text: "Resume", link: "/#resume" },
+  { id: 4, text: "Skills", link: "/#skill" },
   // { id: 5, text: "Testimonials", link: "/testimonials" },
   { id: 1, text: "Projects", link: "/projects" },
-  { id: 6, text: "Contact", link: "/contact" },
+  { id: 6, text: "Contact", link: "/#contact-section" },
 ];
 export const hero = [
   {
@@ -164,7 +164,7 @@ export const blogs = [
     image: "../images/blog/b5.png",
     category: ["React", "Advance Hooks", "Material UI"],
     date: "2024",
-    projects: 8,
+    projects: 9,
     title: "React Responsive Templates",
     link: "https://responsivetemplates.netlify.app",
     projectType: "Projects",

@@ -1,11 +1,15 @@
+import { RefObject } from "react";
 import { educationData, experienceData } from "../assets/data/data";
 import { CiMedal } from "react-icons/ci";
 import { PiGraduationCap } from "react-icons/pi";
 
-export const Resume = () => {
+interface ResumeProps {
+  resumeRef: RefObject<HTMLDivElement>;
+}
+export const Resume: React.FC<ResumeProps> = ({ resumeRef }) => {
   return (
     <>
-      <section className="resume-section">
+      <section className="resume-section" id="resume" ref={resumeRef}>
         <div className="container flexSB-start">
           <div className="w-half">
             <div className="section-header">

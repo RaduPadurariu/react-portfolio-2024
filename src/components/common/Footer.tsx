@@ -1,25 +1,39 @@
-import { linkList } from "../../assets/data/data";
-
-const Footer = () => {
+import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
+interface NavbarProps {
+  scrollToResume: () => void;
+  scrollToSkills: () => void;
+  scrollToProjects: () => void;
+  scrollToContact: () => void;
+}
+const Footer: React.FC<NavbarProps> = ({
+  scrollToResume,
+  scrollToSkills,
+  scrollToProjects,
+  scrollToContact,
+}) => {
   return (
     <>
       <footer className="tj-footer-area">
         <div className="container text-center">
           <div className="logo-box">
-            <a href="/">
+            <Link
+              to="/"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
               <img src="../images/common/logo.png" alt="logo" />
-            </a>
+            </Link>
           </div>
           <div className="footer-menu">
-            <nav>
-              <ul>
-                {linkList.map((link) => (
-                  <li key={link.id}>
-                    <a href={link.link}>{link.text}</a>
-                  </li>
-                ))}
-              </ul>
-            </nav>
+            <Navbar
+              scrollToResume={scrollToResume}
+              scrollToSkills={scrollToSkills}
+              scrollToProjects={scrollToProjects}
+              scrollToContact={scrollToContact}
+            />
           </div>
           <div className="copy-text">
             <p>

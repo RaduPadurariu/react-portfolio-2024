@@ -1,10 +1,13 @@
 import { IoCallOutline } from "react-icons/io5";
 import { TfiEmail } from "react-icons/tfi";
 import { CiLocationOn } from "react-icons/ci";
-import { useRef, useState } from "react";
+import React, { RefObject, useRef, useState } from "react";
 import emailjs from "emailjs-com";
+interface ContactProps {
+  contactRef: RefObject<HTMLDivElement>;
+}
 
-export const Contact = () => {
+export const Contact: React.FC<ContactProps> = ({ contactRef }) => {
   const firstName = useRef<HTMLInputElement>(null);
   const lastName = useRef<HTMLInputElement>(null);
   const phone = useRef<HTMLInputElement>(null);
@@ -68,7 +71,11 @@ export const Contact = () => {
 
   return (
     <>
-      <section className="contact-section" id="contact-section">
+      <section
+        className="contact-section"
+        id="contact-section"
+        ref={contactRef}
+      >
         <div className="container flexSB">
           <div className="contact-form-box w-half">
             <div className="section-header">

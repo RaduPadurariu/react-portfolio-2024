@@ -1,9 +1,12 @@
+import { RefObject } from "react";
 import { skillsData } from "../assets/data/data";
-
-export const Skills = () => {
+interface SkillsProps {
+  skillsRef: RefObject<HTMLDivElement>;
+}
+export const Skills: React.FC<SkillsProps> = ({ skillsRef }) => {
   return (
     <>
-      <section className="skills-section">
+      <section className="skills-section" id="skills" ref={skillsRef}>
         <div className="container">
           <div className="section-header text-center">
             <h2 className="section-title">My Skills</h2>

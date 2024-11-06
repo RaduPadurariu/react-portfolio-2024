@@ -1,9 +1,20 @@
 import { NavLink } from "react-router-dom";
-import { linkList } from "../../assets/data/data";
+// import { HashLink } from "react-router-hash-link";
 import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 import { useEffect, useState } from "react";
-
-const Header = () => {
+import Navbar from "./Navbar";
+interface NavbarProps {
+  scrollToResume: () => void;
+  scrollToSkills: () => void;
+  scrollToProjects: () => void;
+  scrollToContact: () => void;
+}
+const Header: React.FC<NavbarProps> = ({
+  scrollToResume,
+  scrollToSkills,
+  scrollToProjects,
+  scrollToContact,
+}) => {
   const [isSticky, setIsSticky] = useState<boolean>(false);
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
@@ -35,21 +46,24 @@ const Header = () => {
       >
         <div className="container flexSB">
           <div className="logo-box">
-            <NavLink to="/">
+            <NavLink
+              to="/"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
               <img src="../images/common/logo.png" alt="logo" />
             </NavLink>
           </div>
 
           <div className={`header-menu ${isMenuOpen ? "open" : ""}`}>
-            <nav>
-              <ul>
-                {linkList.map((link) => (
-                  <li key={link.id}>
-                    <NavLink to={link.link}>{link.text}</NavLink>
-                  </li>
-                ))}
-              </ul>
-            </nav>
+            <Navbar
+              scrollToResume={scrollToResume}
+              scrollToSkills={scrollToSkills}
+              scrollToProjects={scrollToProjects}
+              scrollToContact={scrollToContact}
+            />
           </div>
 
           <div className="flexSB">
