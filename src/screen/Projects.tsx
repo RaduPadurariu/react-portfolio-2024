@@ -20,37 +20,43 @@ export const Projects: React.FC<ProjectsProps> = ({ projectsRef }) => {
             </p>
           </div>
           <div className="grid4">
-            {blogs.map((blog) => (
-              <div className="blog-item" key={blog.id}>
-                <div className="blog-thumb">
-                  <img src={blog.image} alt="" />
-                  <div className="category">{blog.category.join(" - ")}</div>
-                </div>
-                <div className="blog-content">
-                  <div className="blog-meta">
-                    <ul className="ul-reset">
-                      <li>
-                        <i>
-                          <CiCalendar size={20} />
-                        </i>
-                        {blog.date}
-                      </li>
-                      <li>
-                        <i>
-                          <AiFillFolder size={20} />
-                        </i>
-                        {blog.projectType} ({blog.projects})
-                      </li>
-                    </ul>
+            {blogs
+              .sort((x, y) => y.id - x.id)
+              .map((blog) => (
+                <div className="blog-item" key={blog.id}>
+                  <div
+                    className={`blog-thumb ${
+                      blog.complete ? "" : "blog-item__overlay"
+                    }`}
+                  >
+                    <img src={blog.image} alt="" />
+                    <div className="category">{blog.category.join(" - ")}</div>
                   </div>
-                  <h3 className="blog-title">
-                    <a href={blog.link} target="_blank">
-                      {blog.title}
-                    </a>
-                  </h3>
+                  <div className="blog-content">
+                    <div className="blog-meta">
+                      <ul className="ul-reset">
+                        <li>
+                          <i>
+                            <CiCalendar size={20} />
+                          </i>
+                          {blog.date}
+                        </li>
+                        <li>
+                          <i>
+                            <AiFillFolder size={20} />
+                          </i>
+                          {blog.projectType} ({blog.projects})
+                        </li>
+                      </ul>
+                    </div>
+                    <h3 className="blog-title">
+                      <a href={blog.link} target="_blank">
+                        {blog.title}
+                      </a>
+                    </h3>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
       </section>

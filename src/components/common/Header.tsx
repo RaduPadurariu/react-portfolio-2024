@@ -3,13 +3,13 @@ import { NavLink } from "react-router-dom";
 import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 import { useEffect, useState } from "react";
 import Navbar from "./Navbar";
-interface NavbarProps {
+interface HeaderProps {
   scrollToResume: () => void;
   scrollToSkills: () => void;
   scrollToProjects: () => void;
   scrollToContact: () => void;
 }
-const Header: React.FC<NavbarProps> = ({
+const Header: React.FC<HeaderProps> = ({
   scrollToResume,
   scrollToSkills,
   scrollToProjects,
@@ -63,14 +63,21 @@ const Header: React.FC<NavbarProps> = ({
               scrollToSkills={scrollToSkills}
               scrollToProjects={scrollToProjects}
               scrollToContact={scrollToContact}
+              isMenuOpen
+              setIsMenuOpen={setIsMenuOpen}
             />
           </div>
 
           <div className="flexSB">
             <div className="header-button">
-              <NavLink to="/" className="btn tj-btn-primary">
+              <a
+                href="https://linkedin.com/in/radu-padurariu-13688991"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn tj-btn-primary"
+              >
                 Hire me!
-              </NavLink>
+              </a>
             </div>
             <div className="menu-icon" onClick={toggleMenu}>
               {isMenuOpen ? (

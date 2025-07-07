@@ -1,4 +1,4 @@
-import { FaLinkedinIn, FaSlack, FaYoutube } from "react-icons/fa";
+import { FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 import { hero } from "../assets/data/data";
 
@@ -8,22 +8,26 @@ export const Hero = () => {
       id: 1,
       icon: <FaLinkedinIn size={20} />,
       link: "https://linkedin.com/in/radu-padurariu-13688991",
+      title: "Linkedin",
     },
     {
       id: 2,
       icon: <IoLogoGithub size={20} />,
       link: "https://github.com/RaduPadurariu",
+      title: "Github",
     },
     {
       id: 3,
       icon: <FaYoutube size={17} />,
       link: "https://www.youtube.com/channel/UCx8xr9cB-5xIuM1t3VIUTaA",
+      title: "Youtube",
     },
-    {
-      id: 2,
-      icon: <FaSlack size={20} />,
-      link: "#",
-    },
+    // {
+    //   id: 4,
+    //   icon: <FaSlack size={20} />,
+    //   link: "#",
+    //   title: "Linkedin",
+    // },
   ];
 
   return (
@@ -43,7 +47,7 @@ export const Hero = () => {
                 <span className="hero-sub-title">I am Radu</span>
                 <h1 className="hero-title">
                   Frontend Developer <br />
-                  (React, Node JS)
+                  (React, Next.js)
                 </h1>
 
                 {/* <div className="hero-image-box d-md-none text-center">
@@ -58,6 +62,8 @@ export const Hero = () => {
                 <div className="button-box flexG">
                   <a
                     href="/download/radupadurariuresume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="btn tj-btn-secondary"
                   >
                     Download CV <i className="flaticon-download"></i>
@@ -65,7 +71,12 @@ export const Hero = () => {
                   <ul className="ul-reset social-icons">
                     {socialIcons.map((icon, index) => (
                       <li key={index}>
-                        <a target="_blank" href={icon.link}>
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href={icon.link}
+                          title=""
+                        >
                           {icon.icon}
                         </a>
                       </li>

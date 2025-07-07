@@ -4,12 +4,16 @@ interface NavbarProps {
   scrollToSkills: () => void;
   scrollToProjects: () => void;
   scrollToContact: () => void;
+  isMenuOpen?: boolean;
+  setIsMenuOpen?: (isMenuOpen: boolean) => void;
 }
 const Navbar: React.FC<NavbarProps> = ({
   scrollToResume,
   scrollToSkills,
   scrollToProjects,
   scrollToContact,
+  isMenuOpen = false,
+  setIsMenuOpen = () => {},
 }) => {
   return (
     <nav>
@@ -20,6 +24,7 @@ const Navbar: React.FC<NavbarProps> = ({
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: "smooth" });
+              setIsMenuOpen(!isMenuOpen);
             }}
           >
             Home
@@ -33,6 +38,7 @@ const Navbar: React.FC<NavbarProps> = ({
               {
                 scrollToResume();
               }
+              setIsMenuOpen(!isMenuOpen);
             }}
           >
             Resume
@@ -46,6 +52,7 @@ const Navbar: React.FC<NavbarProps> = ({
               {
                 scrollToSkills();
               }
+              setIsMenuOpen(!isMenuOpen);
             }}
           >
             Skills
@@ -59,6 +66,7 @@ const Navbar: React.FC<NavbarProps> = ({
               {
                 scrollToProjects();
               }
+              setIsMenuOpen(!isMenuOpen);
             }}
           >
             Projects
@@ -72,6 +80,7 @@ const Navbar: React.FC<NavbarProps> = ({
               {
                 scrollToContact();
               }
+              setIsMenuOpen(!isMenuOpen);
             }}
           >
             Contact

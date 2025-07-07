@@ -12,7 +12,7 @@ export const hero = [
   {
     id: 1,
     title: "Years of Frontend Education",
-    text: "2+",
+    text: "3+",
   },
   {
     id: 2,
@@ -21,8 +21,8 @@ export const hero = [
   },
   {
     id: 3,
-    title: "React Responsive Templates",
-    text: "10+",
+    title: "React Templates",
+    text: "20+",
   },
   {
     id: 4,
@@ -31,49 +31,49 @@ export const hero = [
   },
 ];
 
-export const projects = [
-  {
-    id: 1,
-    title: "Expense Tracker App",
-    desc: "An expense tracker app that helps users keep track of their expenses, set budgets, and analyze spending habits.",
-    cover: "../images/portfolio/p1.jpg",
-  },
-  {
-    id: 2,
-    title: "Fitness Tracker App",
-    desc: "A fitness tracker app designed to help users track their workouts, set fitness goals, and monitor progress.",
-    cover: "../images/portfolio/p2.jpg",
-  },
-  {
-    id: 3,
-    title: "Task Management App",
-    desc: "A task management app that enables users to create, organize, and prioritize tasks, set deadlines, and collaborate with team members.",
-    cover: "../images/portfolio/p3.jpg",
-  },
-  {
-    id: 4,
-    title: "Recipe Sharing App",
-    desc: "A recipe sharing app where users can discover new recipes, share their own recipes, and interact with other food enthusiasts.",
-    cover: "../images/portfolio/p4.jpg",
-  },
-  {
-    id: 5,
-    title: "Weather Forecast App",
-    desc: "A weather forecast app that provides users with real-time weather updates, forecasts, and weather alerts for their location.",
-    cover: "../images/portfolio/p5.jpg",
-  },
-  {
-    id: 6,
-    title: "Finance Management App",
-    desc: "A finance management app that helps users manage their finances, track expenses, set financial goals, and analyze spending patterns.",
-    cover: "../images/portfolio/p6.jpg",
-  },
-];
+// export const projects = [
+//   {
+//     id: 1,
+//     title: "Expense Tracker App",
+//     desc: "An expense tracker app that helps users keep track of their expenses, set budgets, and analyze spending habits.",
+//     cover: "../images/portfolio/p1.jpg",
+//   },
+//   {
+//     id: 2,
+//     title: "Fitness Tracker App",
+//     desc: "A fitness tracker app designed to help users track their workouts, set fitness goals, and monitor progress.",
+//     cover: "../images/portfolio/p2.jpg",
+//   },
+//   {
+//     id: 3,
+//     title: "Task Management App",
+//     desc: "A task management app that enables users to create, organize, and prioritize tasks, set deadlines, and collaborate with team members.",
+//     cover: "../images/portfolio/p3.jpg",
+//   },
+//   {
+//     id: 4,
+//     title: "Recipe Sharing App",
+//     desc: "A recipe sharing app where users can discover new recipes, share their own recipes, and interact with other food enthusiasts.",
+//     cover: "../images/portfolio/p4.jpg",
+//   },
+//   {
+//     id: 5,
+//     title: "Weather Forecast App",
+//     desc: "A weather forecast app that provides users with real-time weather updates, forecasts, and weather alerts for their location.",
+//     cover: "../images/portfolio/p5.jpg",
+//   },
+//   {
+//     id: 6,
+//     title: "Finance Management App",
+//     desc: "A finance management app that helps users manage their finances, track expenses, set financial goals, and analyze spending patterns.",
+//     cover: "../images/portfolio/p6.jpg",
+//   },
+// ];
 
 export const experienceData = [
   {
     id: 1,
-    time: "2024 - Present",
+    time: "2024 - present",
     title: "React Developer",
     institute: "Personal Projects, Remote",
   },
@@ -86,7 +86,7 @@ export const experienceData = [
   {
     id: 3,
     time: "2008 - 2022",
-    title: "Data Engineer in Oil Industry",
+    title: "Geological Data Engineer in Oil Industry",
     institute: "Geolog International, Romania",
   },
   // {
@@ -112,6 +112,13 @@ export const educationData = [
   },
   {
     id: 3,
+    time: "2002 - 2007",
+    title: "Geological Engineer",
+    institute:
+      "Alexandru I. Cuza University, Faculty of Geography and Geology, Iași",
+  },
+  {
+    id: 4,
     time: "1998-2002",
     title: "Programming School",
     institute: "High School Nicu Gane, Falticeni",
@@ -125,13 +132,14 @@ export const educationData = [
 ];
 
 export const skillsData = [
-  { id: 1, name: "React", percentage: 75, icon: "../images/skills/s1.svg" },
   {
-    id: 2,
+    id: 1,
     name: "Java Script",
-    percentage: 90,
+    percentage: 85,
     icon: "../images/skills/s2.svg",
   },
+  { id: 2, name: "React", percentage: 80, icon: "../images/skills/s1.svg" },
+
   {
     id: 3,
     name: "Type Script",
@@ -140,55 +148,88 @@ export const skillsData = [
   },
   {
     id: 4,
-    name: "Node JS & Express",
-    percentage: 50,
+    name: "Next.js",
+    percentage: 65,
     icon: "../images/skills/s4.svg",
   },
-  { id: 5, name: "Git", percentage: 65, icon: "../images/skills/s5.svg" },
-  { id: 6, name: "SASS", percentage: 25, icon: "../images/skills/s6.svg" },
+  {
+    id: 5,
+    name: "Tailwind CSS",
+    percentage: 70,
+    icon: "../images/skills/s7.svg",
+  },
+  { id: 6, name: "SASS", percentage: 55, icon: "../images/skills/s6.svg" },
+  // { id: 7, name: "Git", percentage: 65, icon: "../images/skills/s5.svg" },
 ];
 
 export const blogs = [
   {
     id: 1,
+    image: "../images/blog/b2.jpg",
+    category: ["Javascript", "Typescript", "Webpack", "NodeJS"],
+    date: "2022-2023",
+    projects: 11,
+    title: "My First Portfolio",
+    link: "https://radufirstportfolio.netlify.app",
+    projectType: "Portfolio with Mini-Projects",
+    complete: true,
+  },
+  {
+    id: 2,
+    image: "../images/blog/b4.jpg",
+    category: ["Javascript", "CSS"],
+    date: "2023",
+    projects: 1,
+    title: "Community Project",
+    link: "https://aquilascollection.netlify.app/html/set_collection/",
+    projectType: "Project",
+    complete: true,
+  },
+  {
+    id: 3,
+    image: "../images/blog/b5.png",
+    category: ["React", "CSS"],
+    date: "2024",
+    projects: 9,
+    title: "React Responsive Templates",
+    link: "https://raduresponsivetemplates.netlify.app",
+    projectType: "Projects",
+    complete: true,
+  },
+  {
+    id: 4,
     image: "../images/blog/b8.jpg",
     category: ["Router 6.4", "Typescript", "SASS"],
     date: "2024-2025",
     projects: 5,
     title: "React Router Templates",
-    link: "https://routertemplates.netlify.app",
+    link: "https://raduroutertemplates.netlify.app",
     projectType: "Projects",
+    complete: true,
   },
   {
-    id: 2,
-    image: "../images/blog/b5.png",
-    category: ["React", "Advance Hooks", "Material UI"],
-    date: "2024",
-    projects: 9,
-    title: "React Responsive Templates",
-    link: "https://responsivetemplates.netlify.app",
+    id: 5,
+    image: "../images/blog/b1.jpg",
+    category: ["Next.js", "Zustand", "Jest", "Tailwind CSS"],
+    date: "2025",
+    projects: 5,
+    title: "React Next.js Templates",
+    link: "https://radunextjstemplates.vercel.app",
     projectType: "Projects",
+    complete: false,
   },
-  {
-    id: 3,
-    image: "../images/blog/b4.jpg",
-    category: ["Javascript"],
-    date: "2023",
-    projects: 1,
-    title: "Personal Projects",
-    link: "https://aquilascollection.netlify.app",
-    projectType: "Community Project",
-  },
-  {
-    id: 4,
-    image: "../images/blog/b2.jpg",
-    category: ["React", "Typescript", "NodeJS"],
-    date: "2022-2023",
-    projects: 1,
-    title: "My First Portfolio",
-    link: "https://radupadurariu.netlify.app",
-    projectType: "Portfolio with Mini-Projects",
-  },
+  // {
+  //   id: 6,
+  //   image: "../images/blog/b6.jpg",
+  //   category: ["Mongo DB", "Next.js", "Redux"],
+  //   date: "2025-2026",
+  //   projects: 5,
+  //   title: "Full Stack Templates",
+  //   link: "https://radufullstacktemplates.vercel.app",
+  //   projectType: "Projects",
+  //   complete: false,
+  // },
+
   // {
   //   id: 5,
   //   image: "../images/blog/b1.jpg",
