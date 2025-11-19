@@ -1315,6 +1315,24 @@ header img {
   margin-bottom: 0;
   transition: all 0.4s ease-in-out 0s;
 }
+
+.blog-name-and-github {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.blog-github-icon {
+  color: var(--tj-theme-primary);
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
+}
+
+.blog-github-icon:hover {
+  color: white;
+}
 /* --------------   End: Blog Section --------------*/
 
 /* -------------  START: Contact Section  --------------*/

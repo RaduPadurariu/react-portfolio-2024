@@ -2,6 +2,7 @@ import { CiCalendar } from "react-icons/ci";
 import { blogs } from "../assets/data/data";
 import { AiFillFolder } from "react-icons/ai";
 import { RefObject } from "react";
+import { IoLogoGithub } from "react-icons/io";
 
 interface ProjectsProps {
   projectsRef: RefObject<HTMLDivElement>;
@@ -47,13 +48,28 @@ export const Projects: React.FC<ProjectsProps> = ({ projectsRef }) => {
                           </i>
                           {blog.projectType} ({blog.projects})
                         </li>
+                        {blog.githubLink && (
+                          <li>
+                            <a
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              href={blog.githubLink}
+                            >
+                              <i>
+                                <IoLogoGithub className="" size={20} />
+                              </i>
+                            </a>
+                          </li>
+                        )}
                       </ul>
                     </div>
-                    <h3 className="blog-title">
-                      <a href={blog.link} target="_blank">
-                        {blog.title}
-                      </a>
-                    </h3>
+                    <div className="blog-name-and-github">
+                      <h3 className="blog-title">
+                        <a href={blog.link} target="_blank">
+                          {blog.title}
+                        </a>
+                      </h3>
+                    </div>
                   </div>
                 </div>
               ))}
