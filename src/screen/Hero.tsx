@@ -55,9 +55,10 @@ export const Hero = () => {
                 </div> */}
 
                 <p className="lead">
-                  I’m an enthusiastic and detail-oriented Frontend Developer
-                  seeking an entry-level position to prove my skills in coding
-                  and troubleshooting complex problems.
+                  Frontend Developer with hands-on experience building React and
+                  Next.js applications. Focused on clean code, routing, state
+                  management, and real-world UI patterns. Open to remote
+                  Frontend / React Developer opportunities.
                 </p>
                 <div className="button-box flexG">
                   <a

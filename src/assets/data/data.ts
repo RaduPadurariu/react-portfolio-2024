@@ -11,23 +11,23 @@ export const linkList = [
 export const hero = [
   {
     id: 1,
-    title: "Years of Frontend Education",
-    text: "3+",
+    title: "Years Frontend Learning & Practice",
+    text: "4+",
   },
   {
     id: 2,
-    title: "Years of React Practice",
-    text: "1+",
+    title: "Years React & Next.js Experience",
+    text: "2+",
   },
   {
     id: 3,
-    title: "React Templates",
+    title: "React Projects & Templates",
     text: "20+",
   },
   {
     id: 4,
-    title: "Years of IT Experience",
-    text: "3+",
+    title: "Years Remote Experience",
+    text: "4+",
   },
 ];
 
@@ -74,20 +74,20 @@ export const experienceData = [
   {
     id: 1,
     time: "2024 - present",
-    title: "React Developer",
-    institute: "Personal Projects, Remote",
+    title: "Frontend Developer - React & Next.js",
+    institute: "Independent Frontend Projects, IT Industry, Remote",
   },
   {
     id: 2,
-    time: "2022 - 2024",
-    title: "Blockchain game developing support",
-    institute: "Free Lancer - NFT Blockchain Industry, Remote",
+    time: "2022 - 2025",
+    title: "Technical & Community Support",
+    institute: "Blockchain Cuties Game, Blockchain Industry, Remote",
   },
   {
     id: 3,
     time: "2008 - 2022",
-    title: "Geological Data Engineer in Oil Industry",
-    institute: "Geolog International, Romania",
+    title: "Mudlogging Data Engineer",
+    institute: "Geolog International, Oil Industry, Romania",
   },
   // {
   //   id: 4,
@@ -101,26 +101,25 @@ export const educationData = [
   {
     id: 1,
     time: "2024 - present",
-    title: "React Developer",
-    institute: "Webdevsimplified, Remote",
+    title: "React & Next.js Professional Courses",
+    institute: "WebDevSimplified, Remote",
   },
   {
     id: 2,
     time: "2022-2023",
-    title: "Web Developer",
+    title: "Web Development Certification",
     institute: "Scoala Informala de IT, Remote",
   },
   {
     id: 3,
     time: "2002 - 2007",
-    title: "Geological Engineer",
-    institute:
-      "Alexandru I. Cuza University, Faculty of Geography and Geology, Iași",
+    title: "BSc - Geology",
+    institute: "Al. I. Cuza University, Iași",
   },
   {
     id: 4,
     time: "1998-2002",
-    title: "Programming School",
+    title: "High School - Computer Science",
     institute: "High School Nicu Gane, Falticeni",
   },
   // {
@@ -143,13 +142,13 @@ export const skillsData = [
   {
     id: 3,
     name: "Type Script",
-    percentage: 60,
+    percentage: 75,
     icon: "../images/skills/s3.svg",
   },
   {
     id: 4,
     name: "Next.js",
-    percentage: 65,
+    percentage: 70,
     icon: "../images/skills/s4.svg",
   },
   {
@@ -158,7 +157,7 @@ export const skillsData = [
     percentage: 70,
     icon: "../images/skills/s7.svg",
   },
-  { id: 6, name: "SASS", percentage: 55, icon: "../images/skills/s6.svg" },
+  { id: 6, name: "SASS", percentage: 65, icon: "../images/skills/s6.svg" },
   // { id: 7, name: "Git", percentage: 65, icon: "../images/skills/s5.svg" },
 ];
 
@@ -189,7 +188,7 @@ export const blogs = [
   },
   {
     id: 3,
-    image: "../images/blog/b5.png",
+    image: "../images/blog/b5.jpg",
     category: ["React", "CSS"],
     date: "2024",
     projects: 9,
@@ -213,7 +212,7 @@ export const blogs = [
   },
   {
     id: 5,
-    image: "../images/blog/b13.png",
+    image: "../images/blog/b13.jpg",
     category: ["Next.js", "Zustand", "Jest", "Tailwind CSS"],
     date: "2025",
     projects: 5,
@@ -237,8 +236,8 @@ export const blogs = [
   },
   {
     id: 7,
-    image: "../images/blog/b12.png",
-    category: ["Mongo DB", "Express", "JWT", "Zustand", "Tailwind CSS"],
+    image: "../images/blog/b12.jpg",
+    category: ["MongoDB", "Express", "Router 7", "Node.js", "JWT"],
     date: "2025 - present",
     projects: 1,
     title: "M.E.R.N. Template",
