@@ -22,6 +22,7 @@
   --tj-heading-primary: #102039;
   --tj-heading-secondary: #ea1826;
   --tj-theme-primary: #8750f7;
+  --tj-theme-primary-dark: #7442d2;
   --tj-theme-secondary: #2a1454;
   --tj-theme-accent-1: #0f0715;
   --tj-theme-accent-2: #140c1c;
@@ -682,7 +683,9 @@ header img {
   transition: -webkit-transform 0.3s ease-in-out;
   -o-transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition:
+    transform 0.3s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
 }
 
 .tj-header-area .header-menu ul li.current-menu-ancestor a::before,
@@ -1191,7 +1194,7 @@ header img {
   z-index: 1;
   height: 300px;
 }
-
+/* 
 .blog-item .blog-thumb .category {
   display: inline-block;
   background-size: 200%;
@@ -1200,6 +1203,7 @@ header img {
     var(--tj-theme-primary) 0%,
     var(--tj-theme-secondary) 110.61%
   );
+  background-color: var(--tj-theme-secondary);
   text-decoration: none;
   color: var(--tj-white);
   position: absolute;
@@ -1210,6 +1214,29 @@ header img {
   font-size: 13px;
   line-height: 1;
   padding: 7px 10px;
+  border-radius: 50px;
+  transition: 0.4s;
+} */
+
+.blog-item .blog-thumb .category {
+  display: inline-block;
+  background-size: 200%;
+  background-image: linear-gradient(
+    90deg,
+    var(--tj-theme-primary-dark) 0%,
+    var(--tj-theme-secondary) 110.61%
+  );
+  /* background-color: var(--tj-theme-secondary); */
+  text-decoration: none;
+  color: var(--tj-white);
+  position: absolute;
+  left: 22px;
+  top: 10px;
+  z-index: 2;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 1;
+  padding: 15px;
   border-radius: 50px;
   transition: 0.4s;
 }
@@ -1521,7 +1548,9 @@ footer img {
   transition: -webkit-transform 0.3s ease-in-out;
   -o-transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition:
+    transform 0.3s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
 }
 
 .footer-menu ul li a:hover::before {
@@ -1631,7 +1660,9 @@ footer img {
     z-index: 9999999999999999999;
     backdrop-filter: blur(100px);
     border-radius: 10px;
-    transition: max-height 0.3s ease, left 0.3s ease;
+    transition:
+      max-height 0.3s ease,
+      left 0.3s ease;
     animation-name: slideIn;
     animation-duration: 0.3s;
     background-color: rgba(0, 0, 0, 0.8);

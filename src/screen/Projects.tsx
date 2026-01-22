@@ -30,7 +30,7 @@ export const Projects: React.FC<ProjectsProps> = ({ projectsRef }) => {
                       blog.complete ? "" : "blog-item__overlay"
                     }`}
                   >
-                    <img src={blog.image} alt="" />
+                    <img src={blog.image} alt="no-blog-img" />
                     <div className="category">{blog.category.join(" - ")}</div>
                   </div>
                   <div className="blog-content">
